@@ -1,0 +1,26 @@
+Details about the project
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+	# The following program is written in JAVA.                                                                  
+	# The program uses bagging with some classifiers to see if there is any performance gain compared to using a single classifier
+	# It takes three inputs as command line arguments.
+		- "Training" file using which tree will be built.
+		- "Testing" used to test the accuracy of decision tree.
+		-  Number of bags to be created
+		# The entire program uses four java files namely - Attribute.java, Bagging.java, TreeData.java, TrainData.java.
+	# The main program resides in the file Bagging.java and that's the starting point of program.
+	# Also a sample training file(train.dat) and test file(test.dat) is available in folder and can be used for sample run.
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+ *  	Operating system : Tested on windows and ubuntu machine
+ *  	Assumption : Java path is set
+ *
+ *		Compilation : javac directory_path\*.java
+ *		
+ *		Input : file path of train and test data and number of bags to be created as command line arguments
+ *		Output : Decision tree identified using train data and accuracy of decision tree for train and test data
+ *		Execution: java Bagging "path_of_train_file" "path_of_test_file" Number of iterations
+ *		
+ *		Example
+ *		C:\> java Bagging "D:\Machine Learning\Homework\HW1\Data\train.dat" "D:\Machine Learning\Homework\HW1\Data\test.dat" 50
+ *		Accuracy of test file with train data ( 216 instances ) = 82.87
+ *		Accuracy of test file with bag data ( 216 instances, 50 bags ) = 93.22
